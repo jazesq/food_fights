@@ -19,14 +19,14 @@ CREATE TABLE  posts (
 );
 
 
--- CREATE TABLE  comments(
--- 	ID INTEGER PRIMARY KEY,
--- 	p_id INTEGER,
--- 	comment_text VARCHAR,
--- 	comment_user_name VARCHAR,
--- 	comment_date VARCHAR,
--- 	FOREIGN KEY(p_id) REFERENCES posts(post_id)
--- );
+CREATE TABLE  comments(
+	ID INTEGER PRIMARY KEY,
+	p_id INTEGER,
+	comment_text VARCHAR,
+	comment_user_name VARCHAR,
+	comment_date VARCHAR,
+	FOREIGN KEY(p_id) REFERENCES posts(post_id)
+);
 
 
 
@@ -159,8 +159,8 @@ INSERT INTO posts (post_id,post_title,post_text,post_community,post_url,post_use
 
 
 
--- INSERT INTO comments(p_id,comment_text, comment_user_name, comment_date) VALUES(3,'Comment 1', 'Comment from Jazmin', '10/5/2020');
--- INSERT INTO comments(p_id,comment_text, comment_user_name, comment_date) VALUES(4,'Comment 2', 'Comment from Jazmin+1', '10/5/2020');
+INSERT INTO comments(p_id,comment_text, comment_user_name, comment_date) VALUES(3,'Comment 1', 'Comment from Jazmin', '10/5/2020');
+INSERT INTO comments(p_id,comment_text, comment_user_name, comment_date) VALUES(4,'Comment 2', 'Comment from Jazmin+1', '10/5/2020');
 
 
 
