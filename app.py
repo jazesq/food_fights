@@ -89,6 +89,7 @@ def index():
 	
 	
 	
+
 	if get_post == []:
 			return page_not_found(404)
 	return render_template('index.html', p=all_posts)
