@@ -77,13 +77,14 @@ def init_db():
         db.commit()
 
 
-# @app.route('/', methods=['GET'])
-# def home():
-#     return '''<h1>HOME</p>'''
+@app.route('/', methods=['GET'])
+def home():
+    return '''<h1>HOME</p>'''
 
 @app.route('/index.html', methods=['GET', 'POST'])
 def index():
-	all_posts = query_db('SELECT * FROM posts;')
+	# all_posts = query_db('SELECT * FROM posts;')
+	all_posts = query_db('SELECT * FROM comments;')
 
 	
 	
