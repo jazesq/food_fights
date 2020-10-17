@@ -85,7 +85,7 @@ def init_db():
 def index():
 	# all_posts = query_db('SELECT * FROM posts;')
 	all_posts = query_db('SELECT * FROM comments;')
-	a= stringify(all_posts)
+	# a= stringify(all_posts)
 	
 	
 
