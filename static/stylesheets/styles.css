@@ -69,6 +69,7 @@
   .thumbnail-image {
     display: block;
     width: 100%;
+    
   }
   .thumbnail-title {
     display: block;
@@ -83,6 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
   }
   .detail-image-frame {
     position: relative;
@@ -93,13 +95,15 @@
     transform: scale(0.001);
     transition: transform 0ms;
   }
+
+
   .detail-image {
     width: 90%;
   }
   .detail-image-title {
-    position: relative;
-    bottom: 210px;
-    left:75px;
+    position: absolute;
+    bottom:35px;
+    left: 10px;
     font-family: airstreamregular;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
