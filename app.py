@@ -86,6 +86,7 @@ def index():
 	# all_posts = query_db('SELECT * FROM posts;')
 	all_posts = query_db('SELECT * FROM comments;')
 	# a= stringify(all_posts)
+	p=all_posts[0];
 	
 	
 
