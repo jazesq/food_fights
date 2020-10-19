@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>coffeerun</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootst
+rap/3.3.6/css/bootstrap.min.css"
+    />
+
+    <style>
+      form :focus:required {
+        border-color: #a94442;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <header>
+      <h1>Add A Post</h1>
+    </header>
+    <section>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form data-coffee-order="form">
+            <div class="form-group">
+              <label for="post_id">Post ID</label>
+              <input
+                class="form-control"
+                name="post_id"
+                id="post_id"
+                required
+
+              />
+            </div>
+            <div class="form-group">
+              <label for="post_title">Post Title</label>
+              <input
+                class="form-control"
+                name="post_title"
+                id="post_title"
+                required
+  
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="post_text">Post Text</label>
+              <input
+                class="form-control"
+                name="post_text"
+                id="post_text"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="post_community">Post Community</label>
+              <input
+                class="form-control"
+                name="post_community"
+                id="post_community"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="post_url">Post URL</label>
+              <input
+                class="form-control"
+                name="post_url"
+                id="post_url"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="post_user_name">USER NAME</label>
+              <input
+                class="form-control"
+                name="post_user_name"
+                id="post_user_name"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="post_url">Date</label>
+              <input
+                class="form-control"
+                name="post_date"
+                id="post_date"
+                required
+              />
+            </div>
+
+            <!-- <div class="form-group">
+              <label for="emailInput">Email</label>
+              <input
+                class="form-control"
+                type="email"
+                name="emailAddress"
+                id="emailInput"
+                value=""
+                placeholder="dr@who.com"
+                required
+              />
+            </div> -->
+            <!-- <div class="radio">
+              <label>
+                <input type="radio" name="size" value="short" />
+                Short
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="tall" checked />
+                Tall
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="grande" />
+                Grande
+              </label>
+            </div> -->
+            <!-- <div class="form-group">
+              <label for="flavorShot">Flavor Shot</label>
+              <select id="flavorShot" class="form-control" name="flavor">
+                <option value="">None</option>
+                <option value="caramel">Caramel</option>
+                <option value="almond">Almond</option>
+                <option value="mocha">Mocha</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="strengthLevel">Caffeine Rating</label>
+              <input
+                name="strength"
+                id="strengthLevel"
+                type="range"
+                value="30"
+              />
+            </div> -->
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+          </form>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h4>Pending Orders:</h4>
+          <div data-coffee-order="checklist"></div>
+        </div>
+      </div>
+    </section>
+
+    <a href="payment.html">Click Here for Payment</a>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <script src="/static/scripts/validation.js" charset="utf-8"></script>
+    <script src="/static/scripts/checklist.js" charset="utf-8"></script>
+    <script src="/static/scripts/formhandler.js" charset="utf-8"></script>
+    <script src="/static/scripts/remotedatastore.js" charset="utf-8"></script>
+    <script src="/static/scripts/datastore.js" charset="utf-8"></script>
+    <script src="/static/scripts/truck.js" charset="utf-8"></script>
+    <script src="/static/scripts/main.js" charset="utf-8"></script>
+  </body>
+</html>
