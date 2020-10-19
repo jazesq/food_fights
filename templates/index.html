@@ -21,80 +21,113 @@
                     
                 </li>
             </a>
-            <!-- <a href="img/otter2.jpg" data-image-role="trigger" data-image-title="How Deep Is Your Love"
-                data-image-url="img/otter2.jpg">
+            <a href="/static/img/otter2.jpg" data-image-role="trigger" data-image-title="How Deep Is Your Love"
+                data-image-url="/static/img/otter2.jpg">
                 <li class="thumbnail-item">
-                    <img class="thumbnail-image" src="img/otter2.jpg" alt="Robin the Otter">
+                    <img class="thumbnail-image" src="/static/img/otter2.jpg" alt="Robin the Otter">
                     <span class="thumbnail-title">Robin</span>
                 </li>
             </a>
-            <a href="img/otter3.jpg" data-image-role="trigger" data-image-title="You Should be Dancing"
-                data-image-url="img/otter3.jpg">
+            <a href="/static/img/otter3.jpg" data-image-role="trigger" data-image-title="You Should be Dancing"
+                data-image-url="/static/img/otter3.jpg">
                 <li class="thumbnail-item">
-                    <img class="thumbnail-image" src="img/otter3.jpg" alt="Maurice the Otter">
+                    <img class="thumbnail-image" src="/static/img/otter3.jpg" alt="Maurice the Otter">
                     <span class="thumbnail-title">Maurice</span>
                 </li>
             </a>
-            <a href="img/otter4.jpg" data-image-role="trigger" data-image-title="Night Fever"
-                data-image-url="img/otter4.jpg">
+            <a href="/static/img/otter4.jpg" data-image-role="trigger" data-image-title="Night Fever"
+                data-image-url="/static/img/otter4.jpg">
                 <li class="thumbnail-item">
-                    <img class="thumbnail-image" src="img/otter4.jpg" alt="Lesley the Otter">
+                    <img class="thumbnail-image" src="/static/img/otter4.jpg" alt="Lesley the Otter">
                     <span class="thumbnail-title">Lesley</span>
                 </li>
             </a>
-            <a href="img/otter5.jpg" data-image-role="trigger" data-image-title="To Love Somebody"
-                data-image-url="img/otter5.jpg">
+            <a href="/static/img/otter5.jpg" data-image-role="trigger" data-image-title="To Love Somebody"
+                data-image-url="/static/img/otter5.jpg">
                 <li class="thumbnail-item">
-                    <img class="thumbnail-image" src="img/otter5.jpg" alt="Barbara the Otter">
+                    <img class="thumbnail-image" src="/static/img/otter5.jpg" alt="Barbara the Otter">
                     <span class="thumbnail-title">Barbara</span>
                 </li>
-            </a> -->
+            </a>
         </ul>
-        <div class="detail-image-container">
-            <div class="detail-image-left-button" data-image-button="button">
-                <img class="left-btn" src="/static/img/left-arrow.png" alt="<">
-            </div> 
+
+        <div class="detail-image-left-button" data-image-button="button">
+            <img class="left-btn" src="/static/img/left-arrow.png" alt="<">
+          </div>
+
+   
             <div class="detail-image-frame" data-image-role="frame">
                 <span class="detail-image-title" data-image-role="title">Stayin' Alive</span>
-                <img class="detail-image" data-image-role="target" , src="/static/img/otter1.jpg" alt="" id="img1">
-                <p><br></p>
+                <img class="detail-image" data-image-role="target" , src="/static/img/otter1.jpg" alt="" >
+                
 
                 
             </div>
+
+            <div class="position_of_text">
+
+
+
+                <p>{{p[0].comment_text}} </p> <br>
+                <p>User: {{p[0].comment_user_name}} <br></p> 
+                <p>Date: {{p[0].comment_date}} <br></p>
+                <p>{{p[1].comment_text}} <br></p>
+                <p>{{p[1].comment_user_name}} <br></p>
+                <p>{{p[1].comment_date}} <br> </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+                <p>{{p}} </p>
+
+            </div>
+            
+
+            
+
             <!-- <br> -->
             <div class="detail-image-right-button" data-image-button="button">
                 <img class="right-btn" src="/static/img/right-arrow.png" alt=">">
             </div>
 
 
-            <div class="detail-image-comments" data-image-comments="comments">
-                <p><br></p>
-                <p><div>{{p[0].comment_text}}</div></p>
-                <p><br></p>
-                <p><br></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <!-- <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p>
-                <p><div>{{p}}</div></p> -->
-
-            </div>
-            
-        </div>
         
     </main>
     <script src="/static/scripts/main.js" charset="utf-8"></script>
