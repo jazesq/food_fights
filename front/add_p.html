@@ -18,24 +18,85 @@ rap/3.3.6/css/bootstrap.min.css"
 
   <body class="container">
     <header>
-      <h1>CoffeeRun</h1>
+      <h1>Add A Post</h1>
     </header>
     <section>
       <div class="panel panel-default">
         <div class="panel-body">
           <form data-coffee-order="form">
             <div class="form-group">
-              <label for="coffeeOrder">Coffee Order</label>
+              <label for="post_id">Post ID</label>
               <input
                 class="form-control"
-                name="coffee"
-                id="coffeeOrder"
-                autofocus
+                name="post_id"
+                id="post_id"
                 required
-                pattern="[a-zA-Z\s]+"
+
               />
             </div>
             <div class="form-group">
+              <label for="post_title">Post Title</label>
+              <input
+                class="form-control"
+                name="post_title"
+                id="post_title"
+                required
+  
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="post_text">Post Text</label>
+              <input
+                class="form-control"
+                name="post_text"
+                id="post_text"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="post_community">Post Community</label>
+              <input
+                class="form-control"
+                name="post_community"
+                id="post_community"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="post_url">Post URL</label>
+              <input
+                class="form-control"
+                name="post_url"
+                id="post_url"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="post_user_name">USER NAME</label>
+              <input
+                class="form-control"
+                name="post_user_name"
+                id="post_user_name"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="post_url">Date</label>
+              <input
+                class="form-control"
+                name="post_date"
+                id="post_date"
+                required
+              />
+            </div>
+
+            <!-- <div class="form-group">
               <label for="emailInput">Email</label>
               <input
                 class="form-control"
@@ -46,8 +107,8 @@ rap/3.3.6/css/bootstrap.min.css"
                 placeholder="dr@who.com"
                 required
               />
-            </div>
-            <div class="radio">
+            </div> -->
+            <!-- <div class="radio">
               <label>
                 <input type="radio" name="size" value="short" />
                 Short
@@ -64,8 +125,8 @@ rap/3.3.6/css/bootstrap.min.css"
                 <input type="radio" name="size" value="grande" />
                 Grande
               </label>
-            </div>
-            <div class="form-group">
+            </div> -->
+            <!-- <div class="form-group">
               <label for="flavorShot">Flavor Shot</label>
               <select id="flavorShot" class="form-control" name="flavor">
                 <option value="">None</option>
@@ -82,7 +143,7 @@ rap/3.3.6/css/bootstrap.min.css"
                 type="range"
                 value="30"
               />
-            </div>
+            </div> -->
             <button type="submit" class="btn btn-default">Submit</button>
             <button type="reset" class="btn btn-default">Reset</button>
           </form>

@@ -96,7 +96,8 @@ def index():
 
 
 
-@app.route('/add_p.html', methods=['GET', 'POST'])
+
+@app.route('/add_p', methods=['GET', 'POST'])
 def add_p():
 	if request.method == 'POST':
 		post_id = request.form['post_id']
