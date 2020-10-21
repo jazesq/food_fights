@@ -6,3 +6,8 @@
 >flask init
 >flask run
 >sh test_posts.sh
+
+
+
+[To start browser w/o CORS setting:]
+> % open -na Google\ Chrome --args --user-data-dir=/tmp/temporary-chrome-profile-dir --disable-web-security
