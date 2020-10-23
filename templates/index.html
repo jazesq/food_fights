@@ -49,6 +49,32 @@
                     <span class="thumbnail-title">Barbara</span>
                 </li>
             </a>
+
+
+
+            {% for p in p %}
+
+
+        <a href="/static/img/otter5.jpg" data-image-role="trigger" data-image-title={{p.post_title}}
+            data-image-url="/static/img/otter5.jpg">
+            <li class="thumbnail-item">
+                <img class="thumbnail-image" src="/static/img/otter5.jpg" alt="Barbara the Otter">
+                <span class="thumbnail-title">{{p.post_title}}</span>
+            </li>
+           </a>
+
+
+
+            {% endfor %}
+
+
+
+
+
+
+
+
+
         </ul>
 
         <!-- <div class="detail-image-left-button" data-image-button="button">
@@ -66,56 +92,15 @@
 
             <div class="position_of_text">
 
+                {% for p in p %}
 
 
-                <p>{{p[0].comment_text}} </p> <br>
-                <p>User: {{p[0].comment_user_name}} <br></p> 
-                <p>Date: {{p[0].comment_date}} <br></p>
-                <p>{{p[1].comment_text}} <br></p>
-                <p>{{p[1].comment_user_name}} <br></p>
-                <p>{{p[1].comment_date}} <br> </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
-                <p>{{p}} </p>
+                
+        
+        
+        
+                    {% endfor %}
+            
 
             </div>
             

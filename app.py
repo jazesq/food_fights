@@ -84,15 +84,17 @@ def init_db():
 @app.route('/index.html', methods=['GET', 'POST'])
 def index():
 	# all_posts = query_db('SELECT * FROM posts;')
-	all_posts = query_db('SELECT * FROM comments;')
+	all_posts = query_db('SELECT * FROM posts;')
 	# a= stringify(all_posts)
-	p=all_posts[0];
+	# p=all_posts[0];
+
+	all_comments= query_db('SELECT * FROM comments;')
 	
 	
 
 	if get_post == []:
 			return page_not_found(404)
-	return render_template('index.html', p=all_posts)
+	return render_template('index.html', p=all_posts, c=all_comments)
 
 
 
