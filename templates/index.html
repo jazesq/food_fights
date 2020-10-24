@@ -60,12 +60,15 @@
             <li class="thumbnail-item">
                 <img class="thumbnail-image" src="/static/img/otter5.jpg" alt="Barbara the Otter">
                 <span class="thumbnail-title">{{p.post_title}}</span>
+                <span class ="detail-text">{{p.post_text}}</span>
             </li>
            </a>
 
+           {% endfor %}
 
 
-            {% endfor %}
+
+            
 
 
 
@@ -80,37 +83,24 @@
         <!-- <div class="detail-image-left-button" data-image-button="button">
             <img class="left-btn" src="/static/img/left-arrow.png" alt="<">
           </div> -->
-
+            
    
             <div class="detail-image-frame" data-image-role="frame">
                 <span class="detail-image-title" data-image-role="title">Stayin' Alive</span>
                 <img class="detail-image" data-image-role="target" , src="/static/img/otter1.jpg" alt="" >
-                
 
-                
             </div>
-
+            
             <div class="position_of_text">
-
-                {% for p in p %}
-
-
-                
-        
-        
-        
-                    {% endfor %}
-            
-
+                <span class ="detail-text">TEXT: {{p[0].post_text}}</span>
+                <span class ="detail-text">TEXT: {{p[0].post_text}}</span>
             </div>
             
+           
 
-            
+           
 
-            <!-- <br> -->
-            <!-- <div class="detail-image-right-button" data-image-button="button">
-                <img class="right-btn" src="/static/img/right-arrow.png" alt=">">
-            </div> -->
+     
 
 
         

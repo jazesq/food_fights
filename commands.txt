@@ -9,8 +9,8 @@
 
 
 
-[To start browser w/o CORS setting:]
-> % open -na Google\ Chrome --args --user-data-dir=/tmp/temporary-chrome-profile-dir --disable-web-security
+[To start browser w/o CORS setting:MACOS]
+>open -na Google\ Chrome --args --user-data-dir=/tmp/temporary-chrome-profile-dir --disable-web-security
 
 
 
