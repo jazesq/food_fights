@@ -6,3 +6,25 @@
 >flask init
 >flask run
 >sh test_posts.sh
+
+
+
+[To start browser w/o CORS setting:MACOS]
+>open -na Google\ Chrome --args --user-data-dir=/tmp/temporary-chrome-profile-dir --disable-web-security
+
+
+
+
+p[0].comment_text
+
+
+<p>{{p}} </p>
+
+
+{               % for c in c%}
+
+                {% for c in c%}
+                <p>Username: {{c.comment_text}}</p> <br>
+                <p>Date: {{c.comment_date}}</p> <br>
+                <p>{{c.comment_text}}</p>
+                {% endfor%}

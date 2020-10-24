@@ -3,7 +3,7 @@
     var FORM_SELECTOR = '[data-coffee-order="form"]';
     var CHECKLIST_SELECTOR = '[data-coffee-order="checklist"]';
     // var SERVER_URL = 'https://co.audstanley.com/coffeeorders';
-    var SERVER_URL = 'http://localhost:5000/';
+    var SERVER_URL = 'http://localhost:5000/posts/add_p.html';
     // var PAYMENT_SELECTOR = '[data-payment-order=form]';
     var App = window.App;
     var Truck = App.Truck;

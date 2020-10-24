@@ -84,14 +84,71 @@ def init_db():
 @app.route('/index.html', methods=['GET', 'POST'])
 def index():
 	# all_posts = query_db('SELECT * FROM posts;')
-	all_posts = query_db('SELECT * FROM comments;')
+	all_posts = query_db('SELECT * FROM posts;')
 	# a= stringify(all_posts)
+	# p=all_posts[0];
+
+	all_comments= query_db('SELECT * FROM comments;')
 	
 	
 
 	if get_post == []:
 			return page_not_found(404)
-	return render_template('index.html', p=all_posts)
+	return render_template('index.html', p=all_posts, c=all_comments)
+
+
+
+
+@app.route('/add_p.html', methods=['GET', 'POST'])
+def add_p():
+	if request.method == 'POST':
+		post_id = request.form['post_id']
+		post_title = request.form['post_title']
+		post_text = request.form['post_text']
+		post_community = request.form['post_community']
+		post_url = request.form['post_url']
+		post_user_name = request.form['post_user_name']
+		post_date = request.form['post_date']
+		
+		# checks to see if post with this ID already exists
+		query= "SELECT post_title FROM posts WHERE post_id =?;"
+		check = query_db(query, (post_id,))
+		if check == []:
+			
+	
+			# add input to list
+			input_args = []
+			input_args.append(post_id)
+			input_args.append(post_title)
+			input_args.append(post_text)
+			input_args.append(post_community)
+			input_args.append(post_url)
+			input_args.append(post_user_name)
+			input_args.append(post_date)
+			
+			
+			query= "INSERT INTO posts(post_id, post_title, post_text, post_community, post_url, post_user_name, post_date) VALUES(?,?,?,?,?,?,?);"
+			conn = sqlite3.connect(DATABASE)
+			conn.execute(query, input_args)
+			conn.commit()
+			conn.close()
+		
+		else: return conflict_409()
+		
+		# message for successful post upload
+		message = {
+			'Post ID: ' : post_id,
+			'Post Title: ': post_title,
+			'Post Text: ': post_text,
+			'Post Community: ': post_community, 
+			'Post URL: ': post_url,
+			'Post User Name: ': post_user_name,
+			'Post Date': post_date
+		}
+		
+	return render_template('add_p.html')
+	# return send_ok200(message)
+	
 
 # returns all posts in database
 @app.route('/posts/all', methods=['GET'])
